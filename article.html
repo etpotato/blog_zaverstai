@@ -4,23 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Как себя мотивировать. Личный блог Анны Сладкой</title>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@700&display=swap">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
   <header class="page-header header container">
     <nav class="site-nav nav">
       <a class="nav-logo logo" href="index.html">
-        <img class="logo-image" src="" width="130" height="82" alt="Логотип Анны Сладкой">
+        <img class="logo-image" src="img/logo_2x.png" width="130" height="83" alt="Логотип Анны Сладкой">
       </a>
-      <ul class="nav-list">
+      <button class="nav-button" type="button" aria-controls="nav-list" aria-expanded="false">
+        <span class="visually-hidden">Меню</span>
+      </button>
+      <ul class="nav-list" id="nav-list">
         <li class="nav-item"><a href="#" class="nav-link">Статьи</a></li>
         <li class="nav-item"><a href="index.html#about" class="nav-link">Обо мне</a></li>
-        <li class="nav-item"><a href="index.html#portfolio" class="nav-link">Потрфолио</a></li>
+        <li class="nav-item"><a href="index.html#portfolio" class="nav-link">Портфолио</a></li>
         <li class="nav-item"><a href="index.html#contact" class="nav-link">Написать мне</a></li>
       </ul>
     </nav>
   </header>
-  <main class="page-main main container">
-    <img class="main-image" src="" width="1440" height="581" alt="Анна в горах на фоне реки и горных вершин">
+  <main class="page-main main">
+    <picture class="main-image">
+      <source media="(min-width: 600px)"
+              srcset="img/hero-2_1x.jpg">
+      <img alt="Анна в горах на фоне реки и горных вершин" src="img/hero-2_mobile.jpg">
+    </picture>
     <article class="page-article article">
       <h1 class="section-title article-title">Как себя мотивировать</h1>
       <div class="article-meta">
@@ -30,7 +42,7 @@
       <p class="article-parag">Расскажу о биопсихологической теории личности Джеффри Грея, которая мне разобраться в работе мотивационных стимулов. Узнала я о ней из книги «Воля и самоконтроль. Как и мозг мешают нам бороться с соблазнами» Ирины Якутенко.</p>
       <p class="article-parag">Согласно этой теории, человеческое поведение контролируют две системы: BAS (Behavior Activation System) и BIS (Behavior Inhibition System), каждая из них обусловлена генетически. Грей использовал её для понимания того, как вознаграждение или наказание связаны с беспокойством и импульсивностью. Самое интересное, что активность этих систем у людей различна. Зная, какая из них доминирует, можно понять, какие стимулы использовать для эффективной мотивации.</p>
       <figure class="article-figure">
-        <img class="article-image" src="" width="" height="" alt="Страничка календаря в личном дневнике. Акценты выделены ярко-жёлтым маркером">
+        <img class="article-image" src="img/article_1x.jpg" width="997" height="463" alt="Страничка календаря в личном дневнике. Акценты выделены ярко-жёлтым маркером">
         <figcaption class="article-figcaption">Моё поведение регулируется больше BAS, поэтому при планировании целей я всегда использую позитивный стимул.</figcaption>
       </figure>
       <p class="article-parag">BAS (Behavior Activation System) работает на ощущение позитивных эмоций. Мотивация людей, чье поведение в основном определяется этой системой, направлена на получение вознаграждения. Они стремятся получить одобрение и награду за свои действия. Такие люди более мотивированы в учебе и развитии разных навыков. Однако носители активной BAS склонны к импульсивности и желанию немедленного вознаграждения, что может мешать долгосрочной работе. BIS (Behavior Inhibition System) ответственна за избегающее поведение. Люди с этой активной системой мотивируются стремлением избежать проблем. Они более чувствительны к наказанию и новому опыту, а также стремятся избежать ситуаций, когда чувствуют, что могут потерпеть неудачу.</p>
@@ -118,5 +130,6 @@
       </ul>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
